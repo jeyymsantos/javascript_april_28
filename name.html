@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Name</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Getting Name
+        function myName(name) {
+            document.write('Hello! I am ' + name + '!');
+        }
+
+        function myNumber(number){
+            psqr = number * number;
+            return psqr;
+        }
+
+        x = prompt('Enter your name: ');
+        myName(x);
+
+        number = parseInt(prompt('Enter a number: '));
+        document.write('<br><br>The perfect square is: ' + myNumber(number));
+    </script>
+</body>
+
+</html>

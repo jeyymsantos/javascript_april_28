@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript </title>
+</head>
+
+<body>
+
+    <h1> Odd or Even </h1>
+    <hr>
+    <label for="num"></label>
+    <input type="text" id="num" value="">
+    <button onclick="checkNumber()"> Determine </button>
+
+    <h1 id="answer"> </h1>
+
+    <script>
+        function checkNumber() {
+            inputNum = document.getElementById('num').value;
+            answer = document.getElementById('answer');
+
+            loop = parseInt(prompt('Enter number of loop: '));
+
+            for (let x = 0; x < loop; x++) {
+                if (inputNum % 2 == 0) {
+                    answer.innerHTML += 'The number is even! <br>';
+                } else {
+                    answer.innerHTML += 'The number is odd! <br>';
+                }
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
